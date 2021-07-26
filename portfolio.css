@@ -9,7 +9,7 @@ body{
     display: block;
     background-image: url('bg.jpg');
     background-size: cover;
-    height: 810px;
+    height: 850px;
     width: 100%;
     font-size: 1.5cm;
     font-family: 'Encode Sans SC', sans-serif;
@@ -18,30 +18,31 @@ body{
     color: rgb(196, 186, 171);
 }
 @keyframes main {
-    from {height: 0px; opacity: 0%;}
-    to {height: 810px; opacity: 100%;}
+    from {opacity: 0%;}
+    to {opacity: 100%;}
 }
 .name{
     display: inline-block;
     margin-top: 5cm;
     margin-left: 1.75cm;
 }
-ul {
+.nav ul {
 list-style-type: none;
 margin: 0;
 padding: 0;
 overflow: hidden;
 background-color: rgba(226, 225, 225, 0.247);
 }
-li {
-float: left;
+.nav li {
+float: right;
 font-size: 0.4cm;
 }
-li a {
+.main li a {
 display: block;
-color: rgb(196, 186, 171);
+color: rgb(91, 89, 88);
 text-align: center;
 padding: 14px 16px;
+margin-right: 10px;
 text-decoration: none;
 }
 .typewritter{
@@ -60,4 +61,107 @@ text-decoration: none;
 @keyframes type{
   from{opacity: 0%;}
   to{opacity: 100%;}
+}
+#about{
+  /* margin-top: 50px; */
+  padding: 6cm;
+  padding-top: 3cm;
+  padding-right: 3cm;
+  height: fit-content;
+  width: 100%;
+  background-color: rgb(196, 186, 171);
+}
+h1{
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.5cm;
+}
+.me{
+  /* background-color: rgb(196, 186, 171); */
+  height: fit-content;
+  width: 55%;
+  display: inline-block;
+  vertical-align: top;
+}
+.me p{
+  font-size: 0.6cm;
+}
+.photo{
+  display: inline-block;
+  margin-left: 70px;
+  margin-top: 50px;
+  z-index: 200;
+  box-shadow:  35px 25px rgb(70, 62, 62) ;
+  opacity: 40%;
+  transition: 1.5s;
+  max-width: 25%;
+}
+.photo:hover{
+ opacity: 100%;
+ box-shadow:  15px 15px rgb(70, 62, 62) ;
+ transition: 1.5s;
+
+
+}
+.div{
+  /* display: inline-block; */
+  position: absolute;
+  top: 130%;
+  right: 5cm;
+  z-index: -1;
+  height: 400px;
+  width: 500px;
+  /* margin-left: 70px;
+  margin-top: 50px; */
+  background-color: rgb(56, 40, 40);
+}
+.socials{
+  display: inline-block;
+  width: 2cm;
+  margin-right: 0;
+  position: absolute;
+  top: 145%;
+  left: 0%;
+  /* float: inline-end;
+  float: left; */
+}
+.socials ul{
+ list-style-type: none;
+ width: fit-content;
+ display: inline-block;
+}
+.socials li{
+  margin-bottom: 30px;
+  transition: 0.5s;
+}
+.socials li:hover{
+   transform: translateY(-10px);
+   transition: 0.5s;
+}
+.socials img{
+  margin-left: 0.8cm;
+}
+.high{
+  color: rgb(140, 112, 112);
+  cursor: pointer;
+  transition: 1s;
+}
+.high:hover{
+  color: rgb(219, 201, 177);
+  background-color: rgb(61, 61, 61);
+  transition: 1s;
+  border-radius: 5px ;
+}
+.namee{
+  display: inline-block;
+  width: 2cm;
+  position: absolute;
+  top: 100%;
+  right: 0;
+}
+.socials a{
+  text-decoration: none;
+  color: black;
+}
+.socials a:hover{
+  color: rgb(81, 81, 88);
 }
